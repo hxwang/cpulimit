@@ -70,7 +70,7 @@
 //each slot is splitted in a working slice and a sleeping slice
 //TODO: make it adaptive, based on the actual system load
 //#define TIME_SLOT 100000
-#define TIME_SLOT 1000
+#define TIME_SLOT 10000
 
 #define MAX_PRIORITY -10
 
