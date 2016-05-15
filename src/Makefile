@@ -1,5 +1,5 @@
 CC?=gcc
-CFLAGS?=-Wall -g -D_GNU_SOURCE
+CFLAGS?=-Wall -O3 -std=c++11
 TARGETS=cpulimit
 LIBS=list.o process_iterator.o process_group.o
 
@@ -26,3 +26,5 @@ process_group.o: process_group.c process_group.h process_iterator.o list.o
 clean:
 	rm -f *~ *.o $(TARGETS)
 
+mem:
+	$(CC) -o mem  mem.cc $(CFLAGS)
