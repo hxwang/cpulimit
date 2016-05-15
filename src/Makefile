@@ -27,4 +27,4 @@ clean:
 	rm -f *~ *.o $(TARGETS)
 
 mem:
-	$(CC) -o mem  mem.cc $(CFLAGS) -std=c++11
+	$(CC) -o mem  mem.cc $(CFLAGS) -std=c++11 -lstdc++
