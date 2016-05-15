@@ -1,5 +1,5 @@
 CC?=gcc
-CFLAGS?=-Wall -O3 -std=c++11
+CFLAGS?=-Wall -O3
 TARGETS=cpulimit
 LIBS=list.o process_iterator.o process_group.o
 
@@ -27,4 +27,4 @@ clean:
 	rm -f *~ *.o $(TARGETS)
 
 mem:
-	$(CC) -o mem  mem.cc $(CFLAGS)
+	$(CC) -o mem  mem.cc $(CFLAGS) -std=c++11
